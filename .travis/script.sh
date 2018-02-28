@@ -1,7 +1,6 @@
 #!/bin/bash
 
-scripts_dir=$(dirname $(readlink -e "${BASH_SOURCE[0]}"))
-source "$scripts_dir/common";
+source "${0%/*}/setup.sh"
 
 onnx_dir="$PWD"
 
